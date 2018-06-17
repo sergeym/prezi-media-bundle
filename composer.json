@@ -1,0 +1,29 @@
+{
+  "name": "sergeym/prezi-media-bundle",
+  "type": "library",
+  "description": "Prezi integration with Symfony's Sonata Media Bundle",
+  "keywords": [
+    "prezi",
+    "sonata",
+    "media"
+  ],
+  "minimum-stability": "dev",
+  "homepage": "http://sergeymarin.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey Marin",
+      "email": "marin.sergey@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "autoload": {
+    "psr-0": { "Sergeym\\PreziMediaBundle": "" }
+  },
+  "target-dir": "Sergeym/PreziMediaBundle"
+}
