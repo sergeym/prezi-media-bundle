@@ -16,3 +16,4 @@ services:
             - @sonata.media.metadata.proxy
         calls:
             - [ setTemplates, [ { helper_thumbnail: SergeymPreziMediaBundle:Provider:thumbnail.html.twig, helper_view: SergeymPreziMediaBundle:Provider:iframe.html.twig } ] ]
+            - [ setResizer, [ @sonata.media.resizer.custom ]]

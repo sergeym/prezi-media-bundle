@@ -148,7 +148,7 @@ class PreziProvider extends BaseVideoProvider
         $media_sizes = getimagesize($ogImage);
 
         return [
-            'image' => $ogImage,
+            'thumbnail_url' => $ogImage,
             'title' => $ogTitle,
             'description' => $ogDescription,
             'width' => $media_sizes[0],
