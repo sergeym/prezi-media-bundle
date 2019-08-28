@@ -3,17 +3,17 @@ parameters:
 
 services:
     sonata.media.provider.prezi:
-        class: %sergeym_prezi_media.provider.videque.class%
+        class: '%sergeym_prezi_media.provider.videque.class%'
         tags:
             - { name: sonata.media.provider }
         arguments:
-            - sonata.media.provider.prezi
-            - @sonata.media.filesystem.local
-            - @sonata.media.cdn.server
-            - @sonata.media.generator.default
-            - @sonata.media.thumbnail.format
-            - @sonata.media.buzz.browser
-            - @sonata.media.metadata.proxy
+            - sonata.media.provider.prezi'
+            - '@sonata.media.filesystem.local'
+            - '@sonata.media.cdn.server'
+            - '@sonata.media.generator.default'
+            - '@sonata.media.thumbnail.format'
+            - '@sonata.media.buzz.browser'
+            - '@sonata.media.metadata.proxy'
         calls:
             - [ setTemplates, [ { helper_thumbnail: SergeymPreziMediaBundle:Provider:thumbnail.html.twig, helper_view: SergeymPreziMediaBundle:Provider:iframe.html.twig } ] ]
-            - [ setResizer, [ @sonata.media.resizer.custom ]]
+            - [ setResizer, [ '@sonata.media.resizer.custom' ]]
